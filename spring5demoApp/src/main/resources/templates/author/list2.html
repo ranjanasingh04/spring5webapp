@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Spring Framework</title>
+</head>
+<body>
+<h1> Authors List</h1>
+<table>
+	<tr>
+		<td>ID</td>
+		<td>Name</td>
+		<td>Age</td>
+		<td>Gender</td>
+		
+		
+	</tr>
+	<tr th:each="author : ${authors}">
+        <td th:text="${author.Id}">123</td>
+        <td th:text="${author.name}"> Spring in Action</td>
+        <td th:text="${author.age}">name</td>
+        <td th:text="${author.gender}">name</td>
+        
+    </tr>
+</table>
+</body>
+</html>
